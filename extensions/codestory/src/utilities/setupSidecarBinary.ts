@@ -305,7 +305,6 @@ async function runSideCarBinary(sidecarDestination: string, serverUrl: string) {
 		await runCommand(`xattr -dr com.apple.quarantine ${webserverPath}`);
 	}
 
-
 	// Validate that the file exists
 	if (!fs.existsSync(webserverPath)) {
 		const errText = `- Failed to install Sidecar binary.`;
